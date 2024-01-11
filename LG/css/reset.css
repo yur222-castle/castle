@@ -1,0 +1,64 @@
+ @charset "utf-8";
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ em,
+ address {
+     font-style: normal;
+     /* em태그와 address태그의 특징인 기울기 현상을 바로 표시하게 하는 것 */
+ }
+
+ ul,
+ ol,
+ li {
+     list-style: none;
+ }
+
+
+ html,
+ body {
+     color: #fff;
+     line-height: 1.5;
+     /* font-family: serif; */
+     font-style: 15px;
+     font-weight: 400;
+ }
+
+ .wrapper {
+     width: 1280px;
+     margin: 0 auto;
+ }
+
+ button {
+     background-color: transparent;
+     border: 0;
+     color: inherit;
+     font-family: inherit;
+     font-size: inherit;
+     line-height: inherit;
+     letter-spacing: normal;
+     cursor: pointer;
+ }
+
+ @media screen and (max-width:640px) {
+
+     html,
+     body {
+         min-width: auto;
+         font-size: 13px;
+     }
+
+     .wrapper {
+         width: auto;
+         margin: 0 20px;
+     }
+ }
