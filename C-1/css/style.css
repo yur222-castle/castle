@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 1000px;
+    display: flex;
+
+}
+
+/* default 끝 */
+
+header {
+    width: 200px;
+    height: 650px;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 350px 0;
+}
+
+h1.logo {
+    width: 100%;
+    height: 10%;
+    line-height: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+nav {
+    height: 160px;
+}
+
+nav>ul>li.main>a {
+    width: 120px;
+    height: 40px;
+    border-bottom: 2px solid darkblue;
+    text-align: center;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+
+.sub {
+    display: none;
+}
+
+.sub>li>a {
+    width: 120px;
+    height: 40px;
+    background-color: beige;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.main:hover>a {
+    background-color: darkblue;
+    color: #fff;
+}
+
+.sub>li>a:hover {
+    background-color: darkblue;
+    color: #fff
+}
+
+/* 헤더 끝 */
+
+#visual {
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slideWrap {
+    display: flex;
+    width: 300%;
+    height: 100%;
+
+}
+
+.slider {
+    width: 800px;
+    height: 350px;
+    position: relative;
+
+
+}
+
+.slider>p {
+    width: fit-content;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(245, 245, 220, 0.838);
+    font-size: 22px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.s1 {
+    background: url(../img/img1.jpg)no-repeat;
+}
+
+.s2 {
+    background: url(../img/img2.jpg)no-repeat;
+    display: none;
+}
+
+.s3 {
+    background: url(../img/img3.jpg)no-repeat;
+    display: none;
+}
+
+/* 슬라이드 이미지 끝 */
+
+#contents {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+}
+
+.tab {
+    width: 40%;
+    height: 100%;
+}
+
+.tab_menu {
+    display: flex;
+}
+
+.tab_menu>p {
+    width: calc(800px * 0.4 / 2);
+    height: 50px;
+    background-color: beige;
+    text-align: center;
+    padding: 12px 10px;
+    letter-spacing: 1.5px;
+
+}
+
+p.on {
+    background-color: darkblue;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tabcon {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.notice>ul>li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery p img {
+    width: 80%;
+    height: 80%;
+}
+
+/*  탬베뉴 끝 */
+
+.banner {
+    width: 30%;
+    height: 100%;
+}
+
+/* .banner>img {
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+} */
+
+.direct {
+    width: 30%;
+    height: 100%;
+    background: url(../img/direct.jpg)no-repeat;
+    position: relative;
+}
+
+.direct>p {
+    width: fit-content;
+    height: 40px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 220, 0.83);
+    color: darkblue;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+/* 컨텐츠 끝 */
+
+footer {
+    width: 800px;
+    height: 100px;
+    background-color: #666;
+    color: #999;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h4 {
+    width: 20%;
+    height: 100%;
+}
+
+h4 img {
+    width: 100%;
+    height: 100%;
+    padding: 35px 0;
+}
+
+.inner_footer {
+    width: 70%;
+    padding: 20px 0;
+}
+
+.fmenu ul {
+    display: flex;
+    gap: 15px;
+    padding: 0 0 10px 0;
+
+}
+
+/* 푸터 끝 */
+
+
+.popup {
+    display: none;
+}
+
+.popup_box {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: beige;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+button {
+    width: fit-content;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* background-color: darkcyan; */
+    border-style: none;
+
+}
